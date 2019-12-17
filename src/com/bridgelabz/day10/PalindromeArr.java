@@ -4,7 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class PalindromeArr extends PrimeArr {
-	private static List <List<Integer>> palindromeNumbers = new ArrayList<>();
+	private static List<List<Integer>> palindromeNumbers = new ArrayList<>();
+
 	public void storePalindrome() {
 		for (List<Integer> temp : primeNumbers) {
 			List<Integer> palindromeList = new ArrayList<>();
@@ -33,14 +34,14 @@ public class PalindromeArr extends PrimeArr {
 			return true;
 		return false;
 	}
-	
-	 public void displayPalindrome(){
-	        System.out.println("-----------------Palindrome numbers--------------");
-	        for (List<Integer> palindromeNumber : palindromeNumbers) {
-	            for (Integer elements : palindromeNumber) {
-	                System.out.print(elements + "  ");
-	            }
-	            System.out.println();
-	        }
-	    }
+
+	public void displayPalindrome() {
+		System.out.println("-----------------Palindrome numbers--------------");
+		for (List<Integer> palindromeNumber : palindromeNumbers) {
+			for (Integer elements : palindromeNumber) {
+				System.out.print(elements + "  ");
+			}
+			System.out.println();
+		}
+	}
 }

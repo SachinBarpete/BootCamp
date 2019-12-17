@@ -26,6 +26,7 @@ public class RegisterUser {
 		Matcher m = p.matcher(phone);
 		return (m.find() && m.group().equals(phone));
 	}
+
 	public static boolean isValidCompany(String company) {
 		return true;
 	}
@@ -55,31 +56,31 @@ public class RegisterUser {
 		System.out.print("Enter first name : ");
 		String fName = scan.nextLine();
 		System.out.println(isValidName(fName));
-		
+
 		System.out.print("Enter last name : ");
 		String lName = scan.nextLine();
 		System.out.println(isValidName(lName));
-		
+
 		System.out.print("Enter Email : ");
 		String email = scan.nextLine();
 		System.out.println(isValidEmail(email));
-		
+
 		System.out.print("Enter phone number : +91 ");
 		String phone = scan.nextLine();
 		System.out.println(isValidPhone(phone));
-		
+
 		System.out.print("Enter Company name : ");
 		String company = scan.nextLine();
 		System.out.println(isValidCompany(company));
-		
+
 		System.out.print("Enter UserId : ");
 		String userId = scan.nextLine();
 		System.out.println(isValidUserId(userId));
-		
+
 		System.out.print("Enter Password : ");
 		String password = scan.nextLine();
 		System.out.println(isValidPassword(password));
-		
+
 		scan.close();
 	}
 

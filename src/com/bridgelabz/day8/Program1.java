@@ -60,14 +60,12 @@ public class Program1 {
 
 	public static void main(String[] args) {
 		String word = "welcome";
-		String []arr = readFile();
-		int result = binarySearch(arr, word); 
-        if (result == -1) 
-            System.out.println("Element not present"); 
-        else
-            System.out.println("Element found at "
-                              + "index " + result);
-	}	
+		String[] arr = readFile();
+		int result = binarySearch(arr, word);
+		if (result == -1)
+			System.out.println("Element not present");
+		else
+			System.out.println("Element found at " + "index " + result);
+	}
 
 }
-	

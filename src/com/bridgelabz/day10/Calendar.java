@@ -1,6 +1,6 @@
 package com.bridgelabz.day10;
 
-public class Calendar{
+public class Calendar {
 
 	public static int day(int month, int day, int year) {
 		int y = year - (14 - month) / 12;

@@ -18,8 +18,8 @@ public class MergeSortString {
 			array[i] = list.get(i);
 		}
 		System.out.print("List before sort : ");
-		for(String elements : array)
-			System.out.print(elements + "  ");	
+		for (String elements : array)
+			System.out.print(elements + "  ");
 		String[] sortedArray = mergeSort(array);
 		System.out.print("\nList after sort : ");
 		for (String res : sortedArray)

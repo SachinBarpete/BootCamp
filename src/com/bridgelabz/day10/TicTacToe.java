@@ -1,4 +1,5 @@
 package com.bridgelabz.day10;
+
 import java.util.Scanner;
 
 public class TicTacToe {

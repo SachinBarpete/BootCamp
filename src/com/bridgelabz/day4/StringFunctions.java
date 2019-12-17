@@ -10,11 +10,11 @@ public class StringFunctions {
 		System.out.println("Given string is palindrome : " + palindromeString());
 		System.out.print("Permutation of String using Iteration : ");
 		permutationOfStringUsingIteration();
-		
+
 		System.out.print("Permutation of String using Recursion : [ ");
 		permutationOfStringUsingRecursion();
 		System.out.println("]");
-		
+
 		returnString();
 
 	}
@@ -88,7 +88,7 @@ public class StringFunctions {
 	private static void permutations(char[] ch, int currentIndex) {
 
 		if (currentIndex == ch.length - 1) {
-			System.out.print(String.valueOf(ch)+" ");
+			System.out.print(String.valueOf(ch) + " ");
 		}
 		for (int i = currentIndex; i < ch.length; i++) {
 			swap(ch, currentIndex, i);

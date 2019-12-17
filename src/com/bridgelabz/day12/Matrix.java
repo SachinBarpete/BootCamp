@@ -85,6 +85,6 @@ public class Matrix {
 		double[][] f = Matrix.multiply(a, b);
 		BLArrayIO.print(f);
 		BLStdOut.println();
-		
+
 	}
 }

@@ -25,12 +25,13 @@ public class Deck {
 		for (int i = 0; i < 4; i++) {
 			System.out.println("----- Person " + (i + 1) + " -----");
 			for (int j = 0; j < 9; j++) {
-				System.out.println(deck[i + j * 4] + " (Card " + ((i+1) + j * 4) + ")");
+				System.out.println(deck[i + j * 4] + " (Card " + ((i + 1) + j * 4) + ")");
 			}
 			System.out.println();
 		}
-		
+
 	}
+
 	public static void main(String[] args) {
 		Deck deck = new Deck();
 		deck.deckOfCards();

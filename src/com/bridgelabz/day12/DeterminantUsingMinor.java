@@ -9,8 +9,8 @@ public class DeterminantUsingMinor {
 		int[][] mat = new int[3][3];
 		Scanner in = new Scanner(System.in);
 		System.out.println("Enter 3x3 matrix");
-		for(int i=0;i<mat.length;i++) {
-			for(int j=0;j<mat[i].length;j++)
+		for (int i = 0; i < mat.length; i++) {
+			for (int j = 0; j < mat[i].length; j++)
 				mat[i][j] = in.nextInt();
 		}
 		int i = 0, j = 0;

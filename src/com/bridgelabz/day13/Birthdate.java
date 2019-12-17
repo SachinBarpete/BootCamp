@@ -42,7 +42,7 @@ public class Birthdate {
 		
 		String data = String.join("", temp);
 		try {
-			Files.write(Paths.get("/Users/Barpete Brother's/Desktop/data.txt"), data.getBytes());
+			Files.write(Paths.get("/home/admin1/Desktop/birthday.txt"), data.getBytes());
 		} catch (IOException e) {
 			e.printStackTrace();
 		}

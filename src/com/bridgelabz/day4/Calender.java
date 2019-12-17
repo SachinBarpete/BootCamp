@@ -12,7 +12,7 @@ public class Calender extends DayOfWeek {
 		int day = scan.nextInt();
 		int month = scan.nextInt();
 		int year = scan.nextInt();
-		dayOfWeek(month,day,year);
+		dayOfWeek(month, day, year);
 		scan.close();
 	}
 

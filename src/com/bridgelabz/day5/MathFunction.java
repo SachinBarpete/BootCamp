@@ -20,10 +20,10 @@ public class MathFunction {
 		System.out.println(checkCollinearUsingSlope());
 		System.out.println(checkCollinearUsingArea());
 		OverrideMethods methods = new OverrideMethods();
-		String [] str = {"abc", "def", "aaa", "stu", "uvw"};
+		String[] str = { "abc", "def", "aaa", "stu", "uvw" };
 		System.out.println(methods.minValue(str));
 		System.out.println(methods.maxValue(str));
-		
+
 	}
 
 	public static double harmonicNumber(int n) {
@@ -185,33 +185,34 @@ public class MathFunction {
 		return false;
 	}
 }
+
 class OverrideMethods extends MathFunction {
-	static String minValue(String [] str) {
+	static String minValue(String[] str) {
 		int n = str.length;
-		for(int i=0;i<n-1;i++) {
-			for(int j=i+1;j<n;j++) {
-				if(str[i].compareTo(str[j])>0) {
+		for (int i = 0; i < n - 1; i++) {
+			for (int j = i + 1; j < n; j++) {
+				if (str[i].compareTo(str[j]) > 0) {
 					String temp = str[i];
 					str[i] = str[j];
 					str[j] = temp;
 				}
-			}	
+			}
 		}
 		return str[0];
 	}
-	static String maxValue(String [] str) {
+
+	static String maxValue(String[] str) {
 		int n = str.length;
-		for(int i=0;i<n-1;i++) {
-			for(int j=i+1;j<n;j++) {
-				if(str[i].compareTo(str[j])>0) {
+		for (int i = 0; i < n - 1; i++) {
+			for (int j = i + 1; j < n; j++) {
+				if (str[i].compareTo(str[j]) > 0) {
 					String temp = str[i];
 					str[i] = str[j];
 					str[j] = temp;
 				}
-			}	
+			}
 		}
-		return str[n-1];
+		return str[n - 1];
 	}
-	
-	
+
 }

@@ -14,17 +14,17 @@ class Harmonic {
 		double result = 0.0;
 		for (int i = 1; i <= num; i++) {
 			result = result + (double) 1 / i;
-			
+
 			List<Double> series = new ArrayList<>();
-			
+
 			for (double j = 1; j <= i + 1; j++) {
 				if (!series.contains(result))
-						series.add(result);
+					series.add(result);
 			}
-			
+
 			harmonicSeries.add(series);
 		}
-		
+
 		for (List<Double> seriesList : harmonicSeries) {
 			for (Double elements : seriesList) {
 				System.out.print(elements + " ");

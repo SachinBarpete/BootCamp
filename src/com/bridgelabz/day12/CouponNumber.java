@@ -23,7 +23,6 @@ public class CouponNumber {
 				couponNo.add(temp);
 		}
 
-		
 		System.out.println("Total random no genrated " + count);
 		for (int elements : couponNo)
 			System.out.print(elements + " ");
