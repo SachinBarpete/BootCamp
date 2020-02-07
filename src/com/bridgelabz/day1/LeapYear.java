@@ -14,7 +14,6 @@ public class LeapYear {
 				flag = true;
 			else
 				flag = false;
-
 			if (flag == true)
 				System.out.println(year + " is a leap year");
 			else
